@@ -10,3 +10,4 @@ printf ("%d ",++x + ++x);
 	return 0;
 	getch();
 }
+//Output: 8
