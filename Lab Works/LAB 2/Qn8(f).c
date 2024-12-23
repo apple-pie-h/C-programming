@@ -6,7 +6,7 @@
 int main()
 {
 	int x=2, z=4; 
-printf ("%d ",x>>z+z<<1); //Output: 0
+printf ("%d ",x>>2+z<<1); //Output: 0
 printf("%d",x); //Output: 2
 printf("%d",~x); //Output: -3
 	return 0;
