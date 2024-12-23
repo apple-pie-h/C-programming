@@ -6,7 +6,8 @@
 int main()
 {
 	int x=2, z=4; 
-printf ("%d ",x&&z); //bitwise x&z 
+printf ("%d ",x&z); //bitwise x&z 
 	return 0;
 	getch();
 }
+//Output: 0
