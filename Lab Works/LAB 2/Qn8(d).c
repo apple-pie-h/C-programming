@@ -11,3 +11,4 @@ printf ("%d ", (x>z)? x : z);
 	return 0;
 	getch();
 }
+//Output: 4
