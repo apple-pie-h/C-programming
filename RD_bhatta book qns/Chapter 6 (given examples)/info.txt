@@ -1,1 +1,1 @@
-The folder contains example questions from Chapter 6 of RD Bhatta's book.
+The folder contains example questions from Chapter 6 of RD Bhatta's book on C-programming.
