@@ -42,23 +42,27 @@ int main()
 		case 'x':
 			{
 			ch1= x plus y;
-			printf("Sum is %d",ch1);}
+			printf("Sum is %d",ch1);
+   break;}
 		
 		case '-':
 			{
 			ch1= x minus y;
-			printf("Sum is %d",ch1);}
+			printf("Sum is %d",ch1);
+   break;}
 			
 		case '*':
 			{
 			ch1= x multiply y;
-			printf("Sum is %d",ch1);}
+			printf("Sum is %d",ch1);
+   break;}
 				
 		case '/':
 			{
 			ch1= x divide y;
-			printf("Sum is %d",ch1);}
-		break; 
+			printf("Sum is %d",ch1);
+   break;}
+		
 		default: 
 		printf ("Error");
 		}
