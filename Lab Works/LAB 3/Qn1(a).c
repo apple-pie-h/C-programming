@@ -6,7 +6,8 @@
 #define divide /
 int main()
 {
-	float x,y,ch1;
+	float x,y;
+	int ch1;
 	char ch2;
 	printf("Enter two numbers");
 	scanf("%f %f",&x,&y);
