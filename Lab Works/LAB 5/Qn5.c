@@ -5,7 +5,7 @@
 int main()
 {
 	int a; 
-	printf("Even nos\n");
+	printf("Divisible by 7:\n");
 	for (a=1; a<=100; a++)
 	{
 		if (a%7==0)
