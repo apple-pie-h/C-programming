@@ -18,12 +18,12 @@ scanf("%d %d",&n,&r);
 if (n<r)
 { printf("Error");
 }
-printf("Error");
+else{
 p=(fact(n))/(fact(n-1));
 c=p/fact(r);
 printf("Combination: %.2f",c);
 printf("\n Permutation: %.2f",p);
-
+}
 	getch();
 	return 0;
 }
