@@ -8,7 +8,7 @@ int main()
 char a[50]="Hello ", b[50]="World!";
 //using string function
 strcat(a,b);
-
 puts(a);
-
+getch();
+  return 0;
 }
