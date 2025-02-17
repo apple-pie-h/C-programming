@@ -4,12 +4,9 @@
 
 
 #include <stdio.h>
-#include <conio.h>
 #include <string.h>
 
-#define MAX_STUDENTS 3
-#define MAX_NAME_LENGTH 50
-#define MAX_ADDRESS_LENGTH 100
+
 
 // Structure definition for a student
 struct Student {
@@ -22,20 +19,19 @@ struct Student {
     float mathMarks;
 };
 
-// Function to read and display student information using a pointer
-void processAndDisplayStudent(struct Student *s) {
+// Function to read student information using a pointer
+void readStudent(struct Student *s) {
     printf("Enter Roll No: ");
     scanf("%d", &s->rollNo);
-
-    // Clear the input buffer before reading strings
-    getchar(); // Important to consume the newline left by scanf
+    getchar(); // Consume newline
 
     printf("Enter Name: ");
-  scanf("%s", s->name);
- 
-    printf("Enter Address: ");
-   scanf("%s", s->address);
+    scanf("%s",s->name);
 
+
+    printf("Enter Address: ");
+    scanf("%s",s->address);
+ 
     printf("Enter Age: ");
     scanf("%d", &s->age);
     printf("Enter Physics Marks: ");
@@ -44,8 +40,10 @@ void processAndDisplayStudent(struct Student *s) {
     scanf("%f", &s->cMarks);
     printf("Enter Math Marks: ");
     scanf("%f", &s->mathMarks);
+}
 
-    printf("\nStudent Information:\n");
+// Function to display student information using a pointer
+void displayStudent(struct Student *s) {
     printf("Roll No: %d\n", s->rollNo);
     printf("Name: %s\n", s->name);
     printf("Address: %s\n", s->address);
@@ -53,18 +51,25 @@ void processAndDisplayStudent(struct Student *s) {
     printf("Physics Marks: %.2f\n", s->physicsMarks);
     printf("C Marks: %.2f\n", s->cMarks);
     printf("Math Marks: %.2f\n", s->mathMarks);
+
 }
 
 int main() {
     struct Student students[3];
 
+    // Input loop
     for (int i = 0; i < 3; i++) {
         printf("\nEnter details for student %d:\n", i + 1);
-        processAndDisplayStudent(&students[i]); // Pass address of each student
+        readStudent(&students[i]);
         printf("\n");
     }
 
-  
-getch();
+    // Output loop
+    printf("\n--- Student Information ---\n");
+    for (int i = 0; i < 3; i++) {
+        printf("\nDetails for student %d:\n", i + 1);
+        displayStudent(&students[i]);
+    }
+
     return 0;
 }
